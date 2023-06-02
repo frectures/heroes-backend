@@ -14,11 +14,15 @@
 
 ## Web
 
-📺 [JavaScript Tutorial](https://www.youtube.com/watch?v=hrDEjR5NQoY)
+📺 [JavaScript Tutorial](https://www.youtube.com/watch?v=9m7kD6dp5Bc)
 
 📺 [HTML Tutorial](https://www.youtube.com/watch?v=-ogPn2b0n-E)
 
 ## Angular
+
+📺 [TypeScript und Angular Tutorial](https://www.youtube.com/watch?v=CdvoH90fcaU)
+
+📥 https://code.visualstudio.com/Download
 
 📥 https://nodejs.org/en/download
 
@@ -34,13 +38,21 @@ C:\Users\fred\git> cd tour-of-heroes
 C:\Users\fred\git\tour-of-heroes> ng serve --open
 ```
 
-📥 https://code.visualstudio.com/Download
-
-<hr>
-
-📺 [TypeScript und Angular Tutorial](https://www.youtube.com/watch?v=CdvoH90fcaU)
-
 📜 https://angular.io/tutorial/tour-of-heroes/toh-pt0#angular-components
+
+⚠️ An einigen Stellen im Tutorial werdet ihr Änderungen vornehmen,
+die dazu führen, dass die Anwendung temporär nicht lauffähig ist.
+**Sollte eure Anwendung nach einer Änderung nicht mehr laufen**, lest erst mal weiter im Tutorial!
+Wahrscheinlich seid ihr einfach gerade an einer solchen Stelle angelangt, zum Beispiel:
+
+> **The page no longer displays** properly because you changed the hero from a string to an object.
+>
+> Notice that **the application stopped working** when you added `[(ngModel)]`.
+>
+> **That displays an error** since the `hero` property doesn't exist.
+
+💾 Ansonsten: Habt ihr die Änderungenen in den bearbeiteten Dateien
+vielleicht einfach nur vergessen zu speichern? **File / Save All**
 
 ## Maven
 
