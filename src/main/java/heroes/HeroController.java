@@ -10,17 +10,18 @@ public class HeroController {
     private HeroService heroService;
 
     @GetMapping
-    public Iterable<Hero> get(@RequestParam(required = false) String name) {
-        if (name == null) {
-            return heroService.allHeroes();
-        } else {
-            return heroService.heroesWithNamesContaining(name);
-        }
+    public Iterable<Hero> get() {
+        return heroService.allHeroes();
     }
 
     @GetMapping("/{id}")
     public Hero get(@PathVariable Long id) {
         return heroService.heroById(id);
+    }
+
+    @GetMapping("/")
+    public Iterable<Hero> search(@RequestParam String name) {
+        return heroService.heroesWithNamesContaining(name);
     }
 
     @PutMapping
