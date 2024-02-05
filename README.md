@@ -29,7 +29,7 @@
 ```
 C:\Users\fred\git> npm install -g @angular/cli
 
-C:\Users\fred\git> ng new tour-of-heroes
+C:\Users\fred\git> ng new --no-standalone tour-of-heroes
 ? Would you like to add Angular routing? (y/N) ⏎
 ? Which stylesheet format would you like to use? (Use arrow keys) ⏎
 
@@ -51,7 +51,7 @@ Wahrscheinlich seid ihr einfach gerade an einer solchen Stelle angelangt, zum Be
 >
 > **That displays an error** since the `hero` property doesn't exist.
 
-💾 Ansonsten: Habt ihr die Änderungenen in den bearbeiteten Dateien
+💾 Ansonsten: Habt ihr die Änderungen in den bearbeiteten Dateien
 vielleicht einfach nur vergessen zu speichern? **File / Save All**
 
 ## Maven
