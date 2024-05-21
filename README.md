@@ -4,7 +4,7 @@
 
 📥 https://adoptium.net
 
-📥 https://www.eclipse.org/downloads/packages
+📥 https://www.jetbrains.com/idea/download
 
 ## git
 
@@ -22,16 +22,23 @@
 
 📺 [TypeScript und Angular Tutorial](https://www.youtube.com/watch?v=CdvoH90fcaU)
 
-📥 https://code.visualstudio.com/Download
+📥 https://code.visualstudio.com/download
 
-📥 https://nodejs.org/en/download
+📥 https://nodejs.org/en/download/prebuilt-installer
+
+- ✅ In der **Eingabeaufforderung** (im Startmenü `cmd` eintippen) laufen `npm` und `ng` problemlos
+- ⚠️ In der **Powershell** erscheinen kryptische Fehlermeldungen
+- ⚠️ In der **Git Bash** stocken Fortschrittsanzeigen gerne mal
 
 ```
+C:\Users\fred> cd git
+
 C:\Users\fred\git> npm install -g @angular/cli
 
 C:\Users\fred\git> ng new tour-of-heroes
-? Would you like to add Angular routing? (y/N) ⏎
-? Which stylesheet format would you like to use? (Use arrow keys) ⏎
+
+? Which stylesheet format would you like to use? [⏎]
+? Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? [⏎]
 
 C:\Users\fred\git> cd tour-of-heroes
 
@@ -41,8 +48,8 @@ C:\Users\fred\git\tour-of-heroes> ng serve --open
 📜 https://angular.io/tutorial/tour-of-heroes/toh-pt0#angular-components
 
 ⚠️ An einigen Stellen im Tutorial werdet ihr Änderungen vornehmen,
-die dazu führen, dass die Anwendung temporär nicht lauffähig ist.
-**Sollte eure Anwendung nach einer Änderung nicht mehr laufen**, lest erst mal weiter im Tutorial!
+die dazu führen, dass die Anwendung temporär nicht lauffähig ist.  
+**Sollte eure Anwendung nach einer Änderung nicht mehr laufen**, lest erst mal weiter im Tutorial!  
 Wahrscheinlich seid ihr einfach gerade an einer solchen Stelle angelangt, zum Beispiel:
 
 > **The page no longer displays** properly because you changed the hero from a string to an object.
@@ -51,7 +58,7 @@ Wahrscheinlich seid ihr einfach gerade an einer solchen Stelle angelangt, zum Be
 >
 > **That displays an error** since the `hero` property doesn't exist.
 
-💾 Ansonsten: Habt ihr die Änderungenen in den bearbeiteten Dateien
+💾 Ansonsten: Habt ihr die Änderungen in den bearbeiteten Dateien
 vielleicht einfach nur vergessen zu speichern? **File / Save All**
 
 ## Maven
