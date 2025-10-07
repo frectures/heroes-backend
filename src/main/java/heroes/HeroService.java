@@ -2,6 +2,8 @@ package heroes;
 
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class HeroService {
     private final HeroRepository heroRepository;
@@ -34,11 +36,11 @@ public class HeroService {
         heroRepository.save(new Hero("Tornado"));
     }
 
-    public Iterable<Hero> allHeroes() {
+    public List<Hero> allHeroes() {
         return heroRepository.findAll();
     }
 
-    public Iterable<Hero> heroesWithNamesContaining(String nameFilter) {
+    public List<Hero> heroesWithNamesContaining(String nameFilter) {
         return heroRepository.findByNameContainingIgnoreCase(nameFilter);
     }
 

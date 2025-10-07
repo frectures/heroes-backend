@@ -3,6 +3,8 @@ package heroes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/heroes")
 public class HeroController {
@@ -10,7 +12,7 @@ public class HeroController {
     private HeroService heroService;
 
     @GetMapping
-    public Iterable<Hero> get() {
+    public List<Hero> get() {
         return heroService.allHeroes();
     }
 
@@ -20,7 +22,7 @@ public class HeroController {
     }
 
     @GetMapping("/")
-    public Iterable<Hero> search(@RequestParam String name) {
+    public List<Hero> search(@RequestParam String name) {
         return heroService.heroesWithNamesContaining(name);
     }
 
